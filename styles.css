@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: comic-sans;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .container {
