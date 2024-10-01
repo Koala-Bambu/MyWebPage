@@ -1,20 +1,24 @@
-/* Body styling */
-body {
+/* Reset margins and padding */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
   font-family: Arial, sans-serif;
-  background-image: url('https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  background-color: #f4f4f4;
 }
 
 /* Center the content on the page */
 .top-center {
   text-align: center;
-  margin-top: 50px;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
+/* Header styling */
 h1 {
   font-size: 3em;
   margin-bottom: 20px;
@@ -23,37 +27,47 @@ h1 {
 /* Banner styling */
 .banner img {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px; /* Adjust banner width */
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px; /* Optional: rounded corners */
 }
 
-/* Grid layout for images */
+/* Grid container for images */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  justify-items: center;
-  padding: 20px;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
 }
 
+/* Individual grid items */
 .grid-item {
   text-align: center;
 }
 
 .grid-item img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   margin-bottom: 10px;
+  object-fit: cover;
+  border-radius: 10px; /* Optional: rounded corners */
 }
 
-/* Video styling */
+.grid-item p {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+/* Video container */
 .video-container {
-  margin-top: 50px;
-  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 video {
-  max-width: 800px;
+  width: 100%;
+  border-radius: 10px; /* Optional: rounded corners */
 }
