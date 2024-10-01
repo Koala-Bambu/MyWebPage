@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <style>
-    body {
-      background-image: url('https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-    }
-  </style>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtKoala</title>
-    <link rel="artsheet" href="art.css">
+    <link rel="stylesheet" href="art.css">
   </head>
   <body>
-    <p id="demo"></p>
-    <script>
-      var w = window.innerWidth;
-      var h = window.innerHeight;
-    </script>
     <div class="top-center">
-      <div class="content">
-        <h1>Placeholder Museoum Name</h1>
-        <div class="image-holder">
-          <img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png" alt="Museum image" width=((w/6)*4) height="400">
+      <h1>Placeholder Museum Name</h1>
+      <div class="banner">
+        <img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png" alt="Museum image">
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="https://via.placeholder.com/150" alt="Artwork 1">
+          <p>Artwork 1</p>
+        </div>
+        <div class="grid-item">
+          <img src="https://via.placeholder.com/150" alt="Artwork 2">
+          <p>Artwork 2</p>
+        </div>
+        <div class="grid-item">
+          <img src="https://via.placeholder.com/150" alt="Artwork 3">
+          <p>Artwork 3</p>
+        </div>
+        <div class="grid-item">
+          <img src="https://via.placeholder.com/150" alt="Artwork 4">
+          <p>Artwork 4</p>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <video width="100%" controls>
+          <source src="your-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
   </body>
 </html>
