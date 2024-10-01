@@ -56,6 +56,12 @@ h1 {
   border-radius: 10px; /* Optional: rounded corners */
 }
 
+.grid-item img:hover {
+  width: 150%;
+  max-width: 300px;
+  height: auto;
+}
+
 .grid-item p {
   font-size: 1.2em;
   margin-top: 5px;
