@@ -29,6 +29,7 @@ button:hover {
 
 /* Position the button at the top-left of the screen */
 .return-button {
+  display: flex; 
   position: fixed; /* Stays in place even if the page scrolls */
   top: 10px; /* 10px from the top */
   left: 10px; /* 10px from the left */
