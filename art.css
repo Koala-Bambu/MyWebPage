@@ -8,12 +8,10 @@
 /* Body styling */
 body {
   font-family: Arial, sans-serif;
-}
-
-.background {
   background: url('https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png') no-repeat;
   background-filter: brightness(0.5);
 }
+
 
 button {
   max-width: 50px;
