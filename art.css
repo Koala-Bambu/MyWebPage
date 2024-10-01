@@ -1,20 +1,59 @@
-* {
+/* Body styling */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-image: url('https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Sans-serif;
-}
-
+/* Center the content on the page */
 .top-center {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-20%, -50%);
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/* Banner styling */
+.banner img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+/* Grid layout for images */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Video styling */
+.video-container {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+video {
+  max-width: 800px;
 }
