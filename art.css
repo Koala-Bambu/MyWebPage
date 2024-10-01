@@ -11,6 +11,16 @@ body {
   background-color: #f4f4f4;
 }
 
+.return-button {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
 /* Center the content on the page */
 .top-center {
   text-align: center;
@@ -48,8 +58,8 @@ h1 {
 }
 
 .grid-item img {
-  width: 100%;
-  max-width: 200px;
+  width: 80%;
+  max-width: 300px;
   height: auto;
   margin-bottom: 10px;
   object-fit: cover;
@@ -57,7 +67,7 @@ h1 {
 }
 
 .grid-item img:hover {
-  width: 150%;
+  width: 100%;
   max-width: 300px;
   height: auto;
 }
