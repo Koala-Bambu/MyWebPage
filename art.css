@@ -46,7 +46,8 @@ button:hover {
 /* Header styling */
 h1 {
   font-size: 3em;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 /* Banner styling */
