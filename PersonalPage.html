@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <style>
-  </style>
   <head>
     <meta charset="UTF-8">
     <meta name="OwO" content="width=device-width, initial-scale=1.0">
@@ -10,7 +8,50 @@
   </head>
   <body>
     <div class="return-button">
-      <button onclick="window.location.href='https://koala-bambu.github.io/MyWebPage'">↩</button>
+      <button class="static-button" onclick="window.location.href='https://koala-bambu.github.io/MyWebPage'">↩</button>
+    </div>
+
+    <div class="Secret-button">
+      <button id="Secret-button" onclick="window.location.href='custom_location'">.</button>
+    </div>
+
+    <script>
+      // Define your random positioning formula
+      function calculatePosition() {
+        const v = Math.random(); // Generate a random number (v)
+        
+        // Set the page dimensions (window width and height)
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+  
+        // Apply your formula
+        const x = Math.floor(v * (windowWidth - 5)); // Adjust for button width
+        const y = Math.abs(windowHeight - 1000 * 2 * v); // Adjust as per your formula
+  
+        return { x, y };
+      }
+
+      // Get the button element
+      const button = document.getElementById('Secret-button');
+
+      // Calculate random position for the button
+      const { x, y } = calculatePosition();
+
+      // Apply the position using inline styles
+      button.style.position = 'absolute'; // Required to move the button
+      button.style.left = `${x}px`;
+      button.style.top = `${y}px`;
+    </script>
+    <div class="top-center">
+      <h1>Koala</h1>
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Koala-Bambu/MyWebPage/refs/heads/main/KoalaFirstDrawing.jpg" alt="Its-ME-OwO">
+      </div>
+      <div class="description">
+        <p>Hello, my name is koala, i created this page after my teacher asked for it so it may be abandoned right now</p>
+        <p>but before that i have scatered secrets across the pages, while i dont have the knowledge to prevent you</p>
+        <p>from reading the code, try it at least, you may have fun, maybe not, there are not many hints, good luck :3</p>
+      </div>
     </div>
   </body>
 </html>
