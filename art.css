@@ -39,7 +39,7 @@ button:hover {
 /* Center the content on the page */
 .top-center {
   text-align: center;
-  margin: 20px auto;
+  margin: 0px auto;
   max-width: 1200px;
 }
 
