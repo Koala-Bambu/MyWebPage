@@ -1,3 +1,4 @@
+/* Existing button styling */
 * {
   margin: 0;
   padding: 0;
@@ -24,19 +25,77 @@ body::before {
   z-index: -1;
 }
 
+.top-center {
+  text-align: center;
+  margin: 0px auto;
+  max-width: 1200px;
+  color: rgb(22, 175, 155);
+  text-shadow: 2px 2px 0px black;
+  text-shadow: 2px -2px 0px black;
+  text-shadow: -2px 2px 0px black;
+  text-shadow: -2pc -2px 0px black;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  cursor: default;
+}
+
+.image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 5px;
+  color: rgb(33, 158, 196);
+  text-shadow: 2px 2px 0px black;
+  text-shadow: 2px -2px 0px black;
+  text-shadow: -2px 2px 0px black;
+  text-shadow: -2pc -2px 0px black;
+  cursor: default;
+}
+
 button {
-  max-width: 50px;
+  max-width: 50px; /* Default max width for buttons */
   height: auto;
   padding: 10px;
   background-color: #4300ca;
   color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
 
-button:hover {
+/* Static button (return) styling */
+.static-button {
+  cursor: pointer; /* Pointer cursor for this button */
+}
+
+.static-button:hover {
+  background-color: #00416c;
+}
+
+/* Secret (moving) button styling */
+#Secret-button {
+  cursor: help; /* Help cursor for this button */
+  color: black;
+  background-color: rgb(0, 0, 0);
+  filter: brightness(0%); /* Brightness effect */
+  max-width: 3px; /* Set max width to 5 pixels */
+  padding: 0; /* Remove padding to keep it small */
+  max-height: 3px; /* Adjust height if necessary */
+}
+
+#Secret-button:hover {
   background-color: #00416c;
 }
 
@@ -48,3 +107,7 @@ button:hover {
   z-index: 1000;
 }
 
+.Secret-button {
+  cursor: help;
+  /* No specific styles needed for the container */
+}
