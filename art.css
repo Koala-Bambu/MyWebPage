@@ -48,6 +48,7 @@ h1 {
   font-size: 3em;
   margin-bottom: 20px;
   margin-top: 0px;
+  color: white;
 }
 
 /* Banner styling */
@@ -90,6 +91,7 @@ h1 {
 .grid-item p {
   font-size: 1.2em;
   margin-top: 5px;
+  color: white;
 }
 
 /* Video container */
